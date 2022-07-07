@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --green: #27ac60;
+    --black: #2c2c54;
+    --white: #FFF;
+    --border: 1rem solid var(--black);
+    --box-shadow: 0 0.5rem 1rem rgb(0 0 0/ 10%);
+    --outer-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+    --outer-shadow-0: 0 0 0 #d0d0d0, 0 0 0 #f8f8f8;
+    --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    transition: all .2s linear;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.55%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 0.7rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: var(--white);
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--green);
+}
+
+body.active{
+    background: #222;
+}
+
+.body.active .title h2{
+    color: var(--white);
+}
+
+
+body.active .home .container .content .home-text h2{
+    color: var(--white);
+}
+
+body.active .home .container .content .home-text h1{
+    color: var(--white);
+}
+
+.about .container .img-box .social-icon a{
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+}
+
+.about .container .content{
+    background: #f7f7f7;
+    padding: 2rem 1.8rem;
+}
+
+
+.blogs .box-container .box{
+    background: #fff;
+}
